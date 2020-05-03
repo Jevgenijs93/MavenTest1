@@ -1,7 +1,9 @@
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CtCoTest {
@@ -13,6 +15,10 @@ public class CtCoTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://ctco.lv/en");
+
+        WebElement careers = driver.findElement(By.id("menu-item-127"));
+        careers.click();
+
     }
 
     @Test
@@ -24,5 +30,4 @@ public class CtCoTest {
     public static void tearDown() {
 
     }
-
 }
