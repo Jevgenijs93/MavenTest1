@@ -20,6 +20,9 @@ public class CtCoTest {
         careers.click();
         WebElement vakancies = driver.findElement(By.id("menu-item-131"));
         vakancies.click();
+        driver.get("https://ctco.lv/careers/vacancies/test-automation-engineer-2/");
+      //  WebElement testAutomationEngineer = driver.findElement(By.id("menu-item-3249"));
+     //   testAutomationEngineer.click();
 
     }
 
