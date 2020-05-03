@@ -18,6 +18,8 @@ public class CtCoTest {
 
         WebElement careers = driver.findElement(By.id("menu-item-127"));
         careers.click();
+        WebElement vakancies = driver.findElement(By.id("menu-item-131"));
+        vakancies.click();
 
     }
 
