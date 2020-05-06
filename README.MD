@@ -1,5 +1,7 @@
 My first project: maven + git
 
+https://github.com/Jevgenijs93/MavenTest1/blob/master/src/test/java/CtCoTest.java
+
 CtCoTest.java file - test, that contains following steps:
 1. Log in to https://ctco.lv/en page
 2. Open Careers menu
