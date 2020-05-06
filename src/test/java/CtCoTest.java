@@ -20,10 +20,9 @@ public class CtCoTest {
         careers.click();
         WebElement vakancies = driver.findElement(By.id("menu-item-131"));
         vakancies.click();
-        // Did not used findElement type, cause test fails - NoSuchElementException.
-      //  WebElement testAutomationEngineer = driver.findElement(By.id("menu-item-3249"));
-      //  testAutomationEngineer.click();
-        driver.get("https://ctco.lv/careers/vacancies/test-automation-engineer-2/");
+        WebElement testAutomationEngineer = driver.findElement(By.id("menu-item-3249"));
+        testAutomationEngineer.click();
+        // driver.get("https://ctco.lv/careers/vacancies/test-automation-engineer-2/");
         WebElement ProfessionalSkills = driver.findElement(By.xpath("//div[14]/div/div/p[3]/br[4]"));
 
 
