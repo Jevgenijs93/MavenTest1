@@ -5,6 +5,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CtCoTest {
     private static WebDriver driver;
@@ -16,14 +20,18 @@ public class CtCoTest {
         driver.manage().window().maximize();
         driver.get("https://ctco.lv/en");
 
+
         WebElement careers = driver.findElement(By.id("menu-item-127"));
         careers.click();
         WebElement vakancies = driver.findElement(By.id("menu-item-131"));
         vakancies.click();
-        WebElement testAutomationEngineer = driver.findElement(By.id("menu-item-3249"));
+        driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS) ;
+        WebElement testAutomationEngineer = driver.findElement(By.linkText("Test Automation Engineer"));
         testAutomationEngineer.click();
-        // driver.get("https://ctco.lv/careers/vacancies/test-automation-engineer-2/");
-        WebElement ProfessionalSkills = driver.findElement(By.xpath("//div[14]/div/div/p[3]/br[4]"));
+        driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS) ;
+        WebElement ProfessionalSkills = driver.findElement(By.xpath("//div[13]/div/div/p[3]/br[4]"));
+
+        driver.close();
 
 
 
