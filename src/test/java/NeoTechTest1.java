@@ -34,6 +34,7 @@ public class NeoTechTest1 {
         driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
         WebElement AddToCart1 = driver.findElement(By.xpath("//div[2]/div[4]/a"));
         AddToCart1.click();
+
       //  driver.get("https://www.rdveikals.lv/promoaction/lv/444/page/1/");
   //      WebElement HuaweiMobile2 = driver.findElement(By.xpath("//div[4]/div/div/ul/li[3]/a"));
      //   HuaweiMobile2.click();
