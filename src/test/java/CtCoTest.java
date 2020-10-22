@@ -21,15 +21,15 @@ public class CtCoTest {
         driver.get("https://ctco.lv/en");
 
 
-        WebElement careers = driver.findElement(By.id("menu-item-127"));
+        WebElement careers = driver.findElement(By.xpath("//a[contains(text(),'Careers')]"));
         careers.click();
-        WebElement vakancies = driver.findElement(By.id("menu-item-131"));
+        WebElement vakancies = driver.findElement(By.xpath("//a[contains(text(),'Vacancies')]"));
         vakancies.click();
         driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS) ;
         WebElement testAutomationEngineer = driver.findElement(By.linkText("Test Automation Engineer"));
         testAutomationEngineer.click();
         driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS) ;
-        WebElement ProfessionalSkills = driver.findElement(By.xpath("//div[13]/div/div/p[3]/br[4]"));
+        WebElement ProfessionalSkills = driver.findElement(By.xpath("//body/div[1]/div[2]/div[2]/div[1]/div[19]/div[1]/div[1]/ul[1]/li[5]"));
 
         driver.close();
 
