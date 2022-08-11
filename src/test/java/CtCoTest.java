@@ -29,7 +29,8 @@ public class CtCoTest {
         WebElement testAutomationEngineer = driver.findElement(By.linkText("Test Automation Engineer"));
         testAutomationEngineer.click();
         driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS) ;
-        WebElement ProfessionalSkills = driver.findElement(By.xpath("//body/div[1]/div[2]/div[2]/div[1]/div[19]/div[1]/div[1]/ul[1]/li[5]"));
+        WebElement ProfessionalSkills = driver.findElement(By.xpath("//strong[contains(text(),'Professional skills and qualification:')]"));
+
 
         driver.close();
 
